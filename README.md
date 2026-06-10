@@ -1,6 +1,6 @@
 # Food Explorer 🍽️🇲🇦
 
-Application mobile de recettes avec intégration **TheMealDB** et noms en **Darija**.
+Application mobile de recettes avec intégration **TheMealDB**.
 
 ## Installation
 

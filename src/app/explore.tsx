@@ -8,8 +8,8 @@ import {
   ActivityIndicator,
   SafeAreaView,
 } from "react-native";
-import { api, Category } from "@/services/api";
-import { Colors } from "@/constants/theme";
+import { api, Category } from "../services/api";
+import { Colors } from "../constants/theme";
 import { useColorScheme } from "react-native";
 
 export default function ExploreScreen() {

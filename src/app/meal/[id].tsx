@@ -11,8 +11,8 @@ import {
   Linking,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { api, MealDetail } from "@/services/api";
-import { Colors } from "@/constants/theme";
+import { api, MealDetail } from "../../services/api";
+import { Colors } from "../../constants/theme";
 import { useColorScheme } from "react-native";
 
 export default function MealDetailScreen() {
@@ -151,6 +151,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,0.8)",
     justifyContent: "center",
     alignItems: "center",
+    zIndex: 10,
   },
   backButtonText: {
     fontSize: 24,

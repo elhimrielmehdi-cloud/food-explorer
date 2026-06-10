@@ -12,8 +12,8 @@ import {
   StatusBar,
 } from "react-native";
 import { useRouter } from "expo-router";
-import { api, Category, Meal } from "@/services/api";
-import { Colors } from "@/constants/theme";
+import { api, Category, Meal } from "../services/api";
+import { Colors } from "../constants/theme";
 import { useColorScheme } from "react-native";
 
 export default function HomeScreen() {
@@ -114,8 +114,15 @@ export default function HomeScreen() {
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
       <StatusBar barStyle={scheme === 'dark' ? 'light-content' : 'dark-content'} />
       <View style={styles.header}>
-        <Text style={[styles.greeting, { color: colors.textSecondary }]}>Hello, Foodie!</Text>
-        <Text style={[styles.title, { color: colors.text }]}>What do you want to cook today?</Text>
+        <View style={styles.headerTop}>
+          <View>
+            <Text style={[styles.greeting, { color: colors.textSecondary }]}>Hello, Foodie!</Text>
+            <Text style={[styles.title, { color: colors.text }]}>What to cook today?</Text>
+          </View>
+          <TouchableOpacity onPress={() => router.push('/explore')}>
+            <Text style={{ color: colors.primary, fontWeight: 'bold' }}>Explore</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       <View style={styles.searchContainer}>
@@ -168,6 +175,11 @@ const styles = StyleSheet.create({
   header: {
     padding: 20,
     paddingTop: 10,
+  },
+  headerTop: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   greeting: {
     fontSize: 16,

@@ -30,4 +30,4 @@ npx expo start --web
 - Recherche de plats.
 - Filtre par catégories.
 - Détails complets (Ingrédients, Instructions, YouTube).
-- Noms des plats marocains en Darija.
+- Noms des plats marocains.

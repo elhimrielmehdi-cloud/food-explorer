@@ -6,7 +6,7 @@ Application mobile de recettes avec intégration **TheMealDB**.
 
 1. Décompressez l'archive.
 2. Ouvrez un terminal dans le dossier.
-3. Installez les dépendances (SDK 51 compatible iPhone) :
+3. Installez les dépendances (SDK 54) :
    ```powershell
    npm install --legacy-peer-deps
    ```
